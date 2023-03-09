@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+/* font-family: 'Roboto', sans-serif; */ 
+
+@font-face {
+    font-family: neon;
+    src: url(/font/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf);
+}
+
+body {
+    height: 100vh;
+}
+
+
+/* cebeça */
+
+header {
+    width: 100%;
+    height: 75px;
+
+    background-color: #031326;
+    color: white;
+
+    padding: 0px 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-list {
+    width: 600px;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+#nav-list li {
+    cursor: pointer;
+}
+#nav-list li:hover {
+    color: grey;
+}
+#nav-btn {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+#nav-btn button {
+    padding: 18px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    cursor: pointer;
+    
+}
+
+
+/* MAIN */
+
+main {
+    width: 100vw;
+    height: 100vh;
+
+    padding: 30px;
+
+    background-image: url(/image/fundo-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#main-text-open {
+    text-align: center;
+    text-shadow: 5px 5px 10px black;
+    font-size: 3rem;
+    
+
+    color: white;
+
+}
