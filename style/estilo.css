@@ -62,7 +62,6 @@ header {
     border-radius: 10px;
 
     cursor: pointer;
-    
 }
 
 
@@ -88,7 +87,6 @@ main {
     margin-bottom: 50px;
 
     color: white;
-
 }
 
 #banner {
@@ -98,7 +96,6 @@ main {
     margin: auto;
 
     overflow: hidden;
-
 }
 
 .slides {
@@ -114,16 +111,18 @@ main {
 .slide {
     width: 25%;
     position: relative;
+    transition: 1s;
 }
-
-.slide img {
-    object-fit: cover;
+.slide img{
+    width: 100%;
 }
 
 .manual-navigation {
     position: absolute;
+
     width: 800px;
     margin-top: -40px;
+
     display: flex;
     justify-content: space-around;
 }
@@ -131,18 +130,13 @@ main {
 .manual-btn {
     width: 100px;
 
-    background-color: #031326;
-
-    border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
 
     cursor: pointer;
     transition: .5s;
 }
-.manual-btn:hover {
-    background-color: #03132693;
-}
+
 
 #radiobtn1:checked ~ .first{
     margin-left: 0;
@@ -166,8 +160,6 @@ main {
 
     display: flex;
     justify-content: space-around;
-
-    transition: 1s;
 }
 
 .navigation-auto div{
@@ -180,7 +172,22 @@ main {
     padding: 5px;
 
     cursor: pointer;
+
+    transition: 1s;
+}
+.navigation-auto div:hover {
+    background-color: #03132694;
 }
 
-#radiobtn1:checked ~.navigation-auto . au
-
+#radiobtn1:checked ~.navigation-auto .auto-btn1 {
+    background-color: aliceblue;
+}
+#radiobtn2:checked ~.navigation-auto .auto-btn2 {
+    background-color: aliceblue;
+}
+#radiobtn3:checked ~.navigation-auto .auto-btn3 {
+    background-color: aliceblue;
+}
+#radiobtn4:checked ~.navigation-auto .auto-btn4 {
+    background-color: aliceblue;
+}
