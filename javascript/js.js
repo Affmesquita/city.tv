@@ -1,14 +1,10 @@
-let count = 1;
 
-setInterval( function() {
-    nextImage();
-}, 2000);
 
-function nextImage() {
-    count++;
-    if (count > 4) {
-        count = 1;
-    }
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu() {
+    const nav = document.getElementById('nav-header');
+    nav.classList.toggle('active'); 
 }
 
-document.getElementById("radio" + count).checked = true; 
+btnMobile = addEventListener('click', toggleMenu );
