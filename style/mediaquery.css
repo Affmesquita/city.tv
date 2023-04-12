@@ -21,5 +21,17 @@
     }
     #nav-btn {
         background-color: #031326;
+        display: none;
+    }
+    #btn-mobile {
+        display: block;
+
+        border: none;
+        background-color: transparent;
+    }
+    #btn-mobile span {
+        width: 40px;
+
+        color: white;
     }
 }
